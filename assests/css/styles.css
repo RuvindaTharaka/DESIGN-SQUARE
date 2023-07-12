@@ -1685,6 +1685,13 @@ footer > p {
     margin: 40px 20px 0px 20px;
   }
 
+  .new_services_col_wrap-img {
+    height: 500px;
+  }
+
+  .product_card_row {
+    height: 2400px;
+  }
   
 }
 
