@@ -121,7 +121,6 @@ body {
 }
 
 .home_content_div {
-  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -1650,6 +1649,12 @@ footer > p {
   }
 }
 
+@media (max-width: 500px) {
+  .product_card_row {
+    width: 88%;
+  }
+}
+
 @media (max-width: 376px) {
   .services_hiden_title {
     font-size: 35px;
@@ -1679,6 +1684,8 @@ footer > p {
   .methodology_description {
     margin: 40px 20px 0px 20px;
   }
+
+  
 }
 
 /*Special media */

@@ -122,11 +122,6 @@ function scrollUp() {
 window.addEventListener('scroll', scrollUp)
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
-const sr = ScrollReveal({
-    distance: '10px',
-    duration: 3800,
-    reset: true,
-})
 
 sr.reveal(`
         .home_content_div_h1,
