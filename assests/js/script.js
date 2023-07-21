@@ -222,7 +222,7 @@ window.addEventListener('scroll', scrollUp)
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
-    distance: '10px',
+    distance: '5px',
     duration: 4000,
     reset: true,
 })
@@ -284,14 +284,7 @@ sr.reveal(`
     interval: 800,
 })
 
-sr.reveal(`
-   
-    
-        
-    `, {
-    origin: 'bottom',
-    interval: 100,
-})
+
 
 /* Pop Up */
 function openPopup(popup, imageSrc, description) {
