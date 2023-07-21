@@ -10,6 +10,10 @@ body {
   width: 100%;
 }
 
+.active-link {
+  color: #3e653e;
+}
+
 .navbar {
   background-color: #409c69;
   font-family: "Poppins", sans-serif;
@@ -1894,4 +1898,53 @@ footer > p {
     width: 280px;
     height: 300px;
   }
+}
+
+/*Pop-up*/
+.img_popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+/* Styles for the blurred background */
+.img_popup_background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9998;
+}
+
+/* Show the popup and background when active */
+.img_popup.active,
+.img_popup_background.active {
+  display: block;
+}
+
+.img_popup  {
+  width: 50vw !important;
+  height: 60vh !important;
+  border: 2px solid #3e653e !important;
+}
+
+.img_popup img {
+  width: 100% !important;
+  height: 60% !important;
+}
+
+.img_popup .description {
+  margin-top: 10px;
 }

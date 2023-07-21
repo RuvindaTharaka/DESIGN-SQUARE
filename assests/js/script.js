@@ -192,6 +192,26 @@ function loadDescMain(step) {
 }
 
 
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]');
+
+function scrollActive() {
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight,
+            sectionTop = current.offsetTop - 58,
+            sectionId = current.getAttribute('id')
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+        } else {
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
 /*=============== SHOW SCROLL UP ===============*/
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
@@ -202,8 +222,8 @@ window.addEventListener('scroll', scrollUp)
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
-    distance: '1px',
-    duration: 3800,
+    distance: '10px',
+    duration: 4000,
     reset: true,
 })
 
@@ -266,10 +286,48 @@ sr.reveal(`
 
 sr.reveal(`
    
-    .img_box
+    
         
     `, {
     origin: 'bottom',
     interval: 100,
 })
 
+/* Pop Up */
+function openPopup(popup, imageSrc, description) {
+    popup.querySelector('img').src = imageSrc;
+    popup.querySelector('.description').textContent = description;
+    popup.classList.add('active');
+    popup.nextElementSibling.classList.add('active');
+}
+
+function closePopup(popup) {
+    popup.classList.remove('active');
+    popup.nextElementSibling.classList.remove('active');
+}
+
+function addPopupFunctionality(containerClass) {
+    const imgBoxes = document.querySelectorAll(`.${containerClass} .img_box`);
+    const imgPopup = document.querySelector(`.${containerClass} .img_popup`);
+    const imgPopupImg = imgPopup.querySelector('img');
+    const imgPopupDesc = imgPopup.querySelector('.description');
+    const imgPopupBackground = document.querySelector(`.${containerClass} .img_popup_background`);
+
+    imgBoxes.forEach((imgBox) => {
+        imgBox.addEventListener('click', () => {
+            const imageSrc = imgBox.querySelector('img').src;
+            const description = imgBox.querySelector('.description').textContent;
+            openPopup(imgPopup, imageSrc, description);
+        });
+    });
+
+    imgPopupBackground.addEventListener('click', () => {
+        closePopup(imgPopup);
+    });
+}
+
+// Call the function to add popup functionality to the project_image_container
+addPopupFunctionality('project_image_container');
+
+// Call the function to add popup functionality to the project_image_hide_container
+addPopupFunctionality('project_image_hide_container');
