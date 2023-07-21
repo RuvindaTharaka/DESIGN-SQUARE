@@ -17,14 +17,14 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9000;
+  z-index: 10000;
   display: flex;
   justify-content: flex-end;
   /* justify-content: center; */
   align-items: center;
   padding: 10px;
   height: 40px;
-  border-bottom: 3px solid #f9f9f9;
+  border-bottom: 2.1px solid rgba(255,255,255);
 }
 
 .logo {
@@ -122,6 +122,7 @@ body {
 
 .home_content_div {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-image: url("../images/HomeImg.png");
@@ -217,6 +218,8 @@ body {
   font-family: "Abril Fatface", sans-serif;
   letter-spacing: 1px;
   margin-top: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .about_content_div_p {
@@ -615,7 +618,7 @@ body {
 }
 
 .product_box {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 270px;
   height: 340px;
   background-color: #f9f9f9;
@@ -661,10 +664,34 @@ body {
   opacity: 5000;
 }
 
+.product-card-wrap:nth-child(1):hover {
+  z-index: 8000 !important;
+  opacity: 8000 !important;
+}
+
+.product-card-wrap:nth-child(2):hover {
+  z-index: 8000 !important;
+  opacity: 8000 !important;
+}
+
+.product-card-wrap:nth-child(3):hover {
+  z-index: 8000 !important;
+  opacity: 8000 !important;
+}
+
+.product-card-wrap:nth-child(4):hover {
+  z-index: 8000 !important;
+  opacity: 8000 !important;
+}
+
+.product-card-wrap:nth-child(5):hover .product_box {
+  z-index: 8000 !important;
+  opacity: 8000 !important;
+}
+
 .product-img-div {
   width: 270px;
   height: 260px;
-
   background-color: #000000;
   z-index: 1000;
   opacity: 1000;
@@ -673,6 +700,19 @@ body {
 .product_des {
   display: none;
 }
+
+.product_box_clicked {
+  z-index: 9000 !important;
+  opacity: 9000 !important;
+  border: 3px solid #409c69;
+}
+
+.product_wrap_clicked {
+  z-index: 9000 !important;
+  opacity: 9000 !important;
+ 
+}
+
 
 /*====================================== Projects ======================================================*/
 .project-container {
@@ -1323,6 +1363,10 @@ footer > p {
     display: none;
   }
 
+  .produc_des_main_title {
+    display: none;
+  }
+
   /**/
 }
 
@@ -1817,5 +1861,37 @@ footer > p {
 
   .reason {
       margin-bottom: 260px;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .img_wrap-l {
+    width: 300px;
+    height: auto;
+  }
+
+  .img_wrap-r {
+    width: 300px;
+    height: auto;
+  }
+
+  .img_back_green-l {
+    width: 300px;
+    height: 300px;
+  }
+
+  .img_back_green-r {
+    width: 300px;
+    height: 300px;
+  }
+
+  .new_services-img-l {
+    width: 300px;
+    height: 300px;
+  }
+
+  .new_services-img-r {
+    width: 280px;
+    height: 300px;
   }
 }
