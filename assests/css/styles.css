@@ -426,13 +426,35 @@ body {
 
 #vertical-line1 {
   display: block;
-  background-color: #5d9e5d;
+  background-color: green;
 }
 
-.step_wrap:hover .step{
-  background-color: #f5f5f5;
-  border: 2px solid #5d9e5d;
-  color: #0c0c0c;
+#step1:hover 
+{
+  background-color: #f5f5f5 !important;
+  border: 2px solid #5d9e5d !important;
+  color: #0c0c0c !important;
+}
+
+#step2:hover 
+{
+  background-color: #f5f5f5 !important;
+  border: 2px solid #5d9e5d !important;
+  color: #0c0c0c !important;
+}
+
+#step3:hover 
+{
+  background-color: #f5f5f5 !important;
+  border: 2px solid #5d9e5d !important;
+  color: #0c0c0c !important;
+}
+
+#step4:hover 
+{
+  background-color: #f5f5f5 !important;
+  border: 2px solid #5d9e5d !important;
+  color: #0c0c0c !important;
 }
 
 #step1 {
