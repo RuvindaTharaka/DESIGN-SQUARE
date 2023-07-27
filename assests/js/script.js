@@ -338,7 +338,7 @@ sr.reveal(`
         .client_container5
     `, {
     origin: 'top',
-    interval: 500,
+    interval: 1000,
 })
 
 sr.reveal(`
@@ -349,7 +349,7 @@ sr.reveal(`
         
     `, {
     origin: 'bottom',
-    interval: 800,
+    interval: 1400,
 })
 
 sr.reveal(`
@@ -377,7 +377,7 @@ sr.reveal(`
         
     `, {
     origin: 'left',
-    interval: 800,
+    interval: 2000,
 })
 
 sr.reveal(`
@@ -386,7 +386,7 @@ sr.reveal(`
         
     `, {
     origin: 'right',
-    interval: 800,
+    interval: 2000,
 })
 
 

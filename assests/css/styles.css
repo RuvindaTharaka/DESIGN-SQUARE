@@ -1,10 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope&family=Train+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@400;700;800&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   width: 100%;
 }
+
+
+/*Fonts*/
+.nav_link_font{
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: 700 !important; 
+}
+
+.home_banner_title-1_font {
+  font-family: 'Abril Fatface', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.home_banner_desc_font {
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: 400 !important; 
+}
+
+.about_us_main_title_font{
+  font-family: 'Abril Fatface', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.about_us_sub_title_font {
+  font-family: 'Abril Fatface', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.about_us_desc_font {
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: 400 !important; 
+}
+
+.hidden_title_font {
+  font-family: 'Abril Fatface', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.title_font {
+  font-family: 'Abril Fatface', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.sub_title_font {
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: 800 !important; 
+}
+
+.description_font {
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: 400 !important; 
+}
+
+
+
 
 .main {
   width: 100%;
@@ -840,7 +896,8 @@ body {
   height: 100%;
   transition: opacity 0.5s ease-in-out;
 }
-
+/*See Here Project Image=======================================================================================*/
+/*
 .img_box .description {
   position: absolute;
   top: 0;
@@ -855,14 +912,9 @@ body {
   box-sizing: border-box;
   transition: opacity 0.3s ease;
 }
+*/
 
-.img_box:hover img {
-  opacity: 0;
-}
 
-.img_box:hover .description {
-  opacity: 1;
-}
 
 .project_image_hide_container {
   display: grid;
@@ -871,6 +923,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.description
 
 /*====================================== Contact ======================================================*/
 .contact-container {
@@ -1769,10 +1823,10 @@ footer > p {
   }
 
   .step {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     /* border-radius: 25px; */
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .vertical-line {
