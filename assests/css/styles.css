@@ -2048,3 +2048,228 @@ footer > p {
 .img_popup .description {
   margin-top: 10px;
 }
+
+
+/*Specialization*/
+.specialization-container {
+  background-color: #409C69;
+  width: 100%;
+  min-height: 1000px;
+  height: auto;
+  position: relative;
+}
+
+
+.specialization_header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.specialization_hiden_title {
+  font-size: 63px;
+  font-family: "Abril Fatface", sans-serif;
+  letter-spacing: 1px;
+  color: rgb(156, 220, 181, 50%) !important;
+ 
+}
+
+.specialization_title {
+  font-size: 40px;
+  font-family: "Abril Fatface", sans-serif;
+  letter-spacing: 1px;
+  color: #ffffff;
+  position: absolute;
+  top: 38px;
+  left: 38%;
+}
+
+.specialization_grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.specialization_wrap {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.specialization_box {
+  width: 500px; 
+  height:300px; 
+  border: 3px solid rgb(255, 255, 255); 
+  display: flex; 
+  flex-direction: column;
+}
+
+.specialization_title-l {
+  text-align: left; 
+  margin-left: 120px; 
+  color: #fff;
+}
+
+.specialization_title-r {
+  text-align: right; 
+  margin-right: 120px; 
+  color: #fff;
+}
+
+.specialization_desc-r {
+  margin-right: 110px; 
+  margin-left: 10px; 
+  color: #fff; 
+  text-align: justify;
+}
+
+.specialization_desc-l {
+  margin-left: 110px; 
+  margin-right: 10px; 
+  color: #fff; 
+  text-align: justify;
+}
+
+.specialization_wrap img {
+  width: 200px ;
+  height: 200px ;
+}
+
+@media screen and (max-width: 1290px) {
+  .specialization_grid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+
+  .specialization_title {
+      left: 36%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .specialization_title {
+      left: 32%;
+  }
+}
+
+
+@media screen and (max-width: 860px) {
+  .specialization_title {
+      left: 28%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .specialization_title {
+      left: 24%;
+  }
+}
+
+@media screen and (max-width: 621px) {
+
+  .specialization_title {
+    left: 18%;
+  } 
+  .specialization_wrap {
+    width: 520px;
+    height: 400px;
+  }
+  
+  .specialization_box {
+    width: 440px; 
+    height:340px; 
+  }
+  
+  .specialization_title-l {
+    margin-left: 110px; 
+  }
+  
+  .specialization_title-r {
+    margin-right: 110px; 
+  }
+  
+  .specialization_desc-r {
+    margin-right: 100px; 
+    margin-left: 10px; 
+  }
+  
+  .specialization_desc-l {
+    margin-left: 100px; 
+    margin-right: 10px; 
+  }
+  
+  .specialization_wrap img {
+    width: 160px ;
+    height: 160px ;
+  }
+}
+
+@media screen and (max-width: 524px) { 
+  .specialization_hiden_title {
+    font-size: 40px;
+  }
+
+  .specialization_title {
+    font-size: 20px;
+    top: 35px;
+    left: 30%;
+  }
+
+  .specialization_wrap {
+    width: 340px;
+    height: 660px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+  
+  .specialization_box {
+    width: 300px; 
+    height: 600px; 
+    border: 3px solid rgb(255, 255, 255); 
+    display: flex; 
+    flex-direction: column;
+  }
+  
+  .specialization_title-l {
+    text-align: left; 
+    margin-top: 160px; 
+    color: #fff;
+  }
+  
+  .specialization_title-r {
+    text-align: right; 
+    margin-top: 160px; 
+    color: #fff;
+  }
+  
+  .specialization_desc-r {
+    margin-right: 10px; 
+    margin-left: 10px; 
+    color: #fff; 
+    text-align: justify;
+  }
+  
+  .specialization_desc-l {
+    margin-left: 10px; 
+    margin-right: 10px; 
+    color: #fff; 
+    text-align: justify;
+  }
+  
+  .specialization_wrap img{
+    width: 200px ;
+    height: 200px ;
+    top: 0;
+  }
+
+}
