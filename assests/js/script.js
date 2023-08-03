@@ -174,6 +174,8 @@ function loadDescMain(step) {
 
     switch (step) {
         case 1:
+            descTitle.style.display = "block";
+            descDiv.style.display = "block";
             descMain = "The first and foremost step is to map a draft of the final outcome through the eyes of the client. We believe interior designing is personal, rather a unique concern. Getting to know the client’s vision is very vital in bringing out the spectacle. We then carefully inspect the job site at this stage. Design Square will be very attentive to the nature of the space/business, occupants’ lifestyle and behavior, colour matches and favourations and even tiny details such as pets, vehicles, surrounding when creating and designing concepts. Discussions and more discussions, one thing we at Design Square believe in as one important and continuing activity to the desired magic. Budget discussions is also an important corridor to walk-through carefully at this stage. The goal is to delight  the client without making a hole in the pocket. We finalize which design ideology to go on in this imperative phase.";
             descSub1.textContent = descMain;
             descSub2.textContent = "";
@@ -181,6 +183,7 @@ function loadDescMain(step) {
             descSub4.textContent = "";
             descSub5.textContent = "";
             descTitle.textContent = "Product One";
+
 
             productWrap1.classList.toggle("product_wrap_clicked");
             productWrap2.classList.remove("product_wrap_clicked");
@@ -197,6 +200,8 @@ function loadDescMain(step) {
 
             break;
         case 2:
+            descTitle.style.display = "block";
+            descDiv.style.display = "block";
             descMain = "We then design. We draw. We map. We sketch. We do a lot of them, guessing what the client would prefer one over the other. After further discussions, we make any alterations, changes, colour grading, and enhancing the design further to fine-tune the best outcome yet to happen.";
             descSub2.textContent = descMain;
             descSub1.textContent = "";
@@ -220,6 +225,8 @@ function loadDescMain(step) {
 
             break;
         case 3:
+            descTitle.style.display = "block";
+            descDiv.style.display = "block";
             descMain = "The magic converted in to reality in this phase. Once the agreeable design is finalized along with other resources, we focus on getting the real work done.In this phase, the excellence of work will be the rule to follow in order to achieve the craftsmanship to the utmost quality and standards. Compromising is out of the context in delivering what we promise.Just-in-Time JIT) delivery of work will also be one of our biggest considerations at this stage. Our expert team will assist and keep a keen eye until the project is fully completed. We then do the final inspections and go through each and every single detail before the project is handed over to the happy client.";
             descSub3.textContent = descMain;
             descSub2.textContent = "";
@@ -243,6 +250,8 @@ function loadDescMain(step) {
 
             break;
         case 4:
+            descTitle.style.display = "block";
+            descDiv.style.display = "block";
             descMain = "Our concern for our clients’ satisfaction is not over yet. We care about the continuing satisfaction of our clients by providing comprehensive support and services even after the successful completion of the project. From enhancements to alterations and modifications, we are happy to continue the delivery of support and services with no delay.We are unique in terms of our tradition of building trusted and long-lasting corporate relationships with our clients.";
             descSub4.textContent = descMain;
             descSub2.textContent = "";
@@ -266,6 +275,8 @@ function loadDescMain(step) {
 
             break;
         case 5:
+            descTitle.style.display = "block";
+            descDiv.style.display = "block";
             descMain = "2Our concern for our clients’ satisfaction is not over yet. We care about the continuing satisfaction of our clients by providing comprehensive support and services even after the successful completion of the project. From enhancements to alterations and modifications, we are happy to continue the delivery of support and services with no delay.We are unique in terms of our tradition of building trusted and long-lasting corporate relationships with our clients.";
             descSub5.textContent = descMain;
             descSub4.textContent = "";
@@ -383,7 +394,7 @@ sr.reveal(`
 sr.reveal(`
     .new_services-img-l,
     .img_back_green-r
-        
+    
     `, {
     origin: 'right',
     interval: 2000,
