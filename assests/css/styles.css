@@ -1917,7 +1917,7 @@ footer > p {
   text-align: center;
   width: 100%; 
   height: auto;
-  min-height: 800px;
+  min-height: 600px;
   background-color: #409c69;
 }
 
@@ -1934,22 +1934,29 @@ footer > p {
   color: #fff; 
   margin: 20px;
   position: relative;
-  background-color: #5ba45b;
-  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  border: 2px solid #3e653e;
 }
+
+
+
+
 
 .reason>h2 {
   color: rgba(255,255,255,0.8);
   letter-spacing: 1px;
 }
 
-.top-left {
-  margin-top: 50px;
+.reason > h2 {
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
 }
+With these CSS changes, the first and third divs with classes 'top-left' and 'bottom-left' will have a top border of 50% height and a left border of 50% width, giving them a triangular shape. The second and fourth divs with classes 'top-right' and 'bottom-right' will have a bottom border of 50% height and a right border of 50% width, also forming a triangular shape. The other CSS styles specific to these divs can be added as needed.
 
-.bottom-left {
-  margin-top: 100px;
-}
+
+
+
+
+
 
 /* Responsive styles for screen sizes up to 768px */
 
@@ -2282,3 +2289,5 @@ footer > p {
   }
 
 }
+
+.choose_row
