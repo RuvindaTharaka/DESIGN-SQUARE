@@ -1495,6 +1495,10 @@ footer > p {
     left: 20px;
   }
 
+  .navbar {
+    justify-content: flex-end;
+  }
+  
   .nav-links {
     display: none;
   }
@@ -1934,7 +1938,36 @@ footer > p {
   color: #fff; 
   margin: 20px;
   position: relative;
-  border: 2px solid #3e653e;
+  background-color: #5d9e5d;
+}
+
+.top-left::after,
+.bottom-left::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  height: 140px;
+  width: 180px;
+  border: 2px solid #ffffff;
+  border-right: none;
+  border-bottom: none;
+  
+}
+
+.top-right::after,
+.bottom-right::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  height: 140px;
+  width: 180px;
+  border: 2px solid #ffffff;
+  border-left: none;
+  border-top: none;
 }
 
 
@@ -1950,7 +1983,7 @@ footer > p {
   color: rgba(255, 255, 255, 0.8);
   letter-spacing: 1px;
 }
-With these CSS changes, the first and third divs with classes 'top-left' and 'bottom-left' will have a top border of 50% height and a left border of 50% width, giving them a triangular shape. The second and fourth divs with classes 'top-right' and 'bottom-right' will have a bottom border of 50% height and a right border of 50% width, also forming a triangular shape. The other CSS styles specific to these divs can be added as needed.
+
 
 
 
@@ -1959,7 +1992,6 @@ With these CSS changes, the first and third divs with classes 'top-left' and 'bo
 
 
 /* Responsive styles for screen sizes up to 768px */
-
 @media screen and (max-width: 1135px) {
   .choose_row {
       display: grid;
@@ -1970,6 +2002,7 @@ With these CSS changes, the first and third divs with classes 'top-left' and 'bo
       margin-bottom: 260px;
   }
 }
+
 
 
 @media screen and (max-width: 778px) {
@@ -2290,4 +2323,3 @@ With these CSS changes, the first and third divs with classes 'top-left' and 'bo
 
 }
 
-.choose_row
