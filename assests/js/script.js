@@ -349,6 +349,7 @@ sr.reveal(`
         .client_container5,
         .top-left,
         .bottom-right
+
     `, {
     origin: 'top',
     interval: 3000,
@@ -371,6 +372,7 @@ sr.reveal(`
         .home_content_div_btn_explore,
         .bottom-left,
         .top-right
+
     `, {
     origin: 'bottom',
     interval: 3000,
