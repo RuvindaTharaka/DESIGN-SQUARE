@@ -339,20 +339,18 @@ window.addEventListener('scroll', scrollUp)
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
     distance: '10px',
-    duration: 4000,
+    duration: 2000,
     reset: true,
 })
 
 sr.reveal(`
         .home_content_div_h1,
         .logo,
-        .client_container5,
-        .top-left,
-        .bottom-right
+        .client_container5
 
     `, {
     origin: 'top',
-    interval: 3000,
+    interval: 2000,
 })
 
 sr.reveal(`
@@ -375,7 +373,7 @@ sr.reveal(`
 
     `, {
     origin: 'bottom',
-    interval: 3000,
+    interval: 2400,
 })
 
 sr.reveal(`
